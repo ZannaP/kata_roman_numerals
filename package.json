@@ -1,0 +1,31 @@
+{
+  "name": "kata_roman_numerals",
+  "version": "1.0.0",
+  "description": "TDD exercise. The Kata says you should write a function to convert from normal numbers to Roman Numerals.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZannaP/kata_roman_numerals.git"
+  },
+  "keywords": [],
+  "author": "Zanna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZannaP/kata_roman_numerals/issues"
+  },
+  "homepage": "https://github.com/ZannaP/kata_roman_numerals#readme",
+  "dependencies": {
+    "jest": "^29.6.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "babel-jest": "^29.6.1"
+  }
+}
