@@ -70,13 +70,16 @@ describe("convertArabicToRoman", () => {
       convertArabicToRoman("17");
     }).toThrow("Incorrect input");
   });
-  test("it throws an error if a number is not in range 1:4999", () => {
+  test("it throws an error if a number is not in range 1:4999 or is decimal", () => {
     expect(() => {
       convertArabicToRoman(-1);
-    }).toThrow("A number must be in the range 1:4999");
+    }).toThrow("A number must be an integer in the range 1:4999");
     expect(() => {
       convertArabicToRoman(5000);
-    }).toThrow("A number must be in the range 1:4999");
+    }).toThrow("A number must be an integer in the range 1:4999");
+    expect(() => {
+      convertArabicToRoman(5.29);
+    }).toThrow("A number must be an integer in the range 1:4999");
   });
   test("returns roman number for any number < 5000", () => {
     expect(convertArabicToRoman(8)).toBe("VIII");
